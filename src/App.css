@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+/* Global styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: #343a40;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Card styling */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-header {
+  background-color: #343a40;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+}
+
+button {
+  border-radius: 5px;
+}
+
+/* Form Styling */
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+/* List group */
+.list-group-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+.list-group-item strong {
+  color: #007bff;
+}
+
+/* Header Styles */
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+header h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Alert Messages */
+.alert-info {
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+/* Input Field for Filter */
+input[type="text"] {
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+/* Global Body Styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the form on the page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+/* Card Style */
+.login-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Header Style */
+.login-form h2 {
+  text-align: center;
+  color: #6a4e23;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Input Fields */
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #6a4e23;
+  box-shadow: 0 0 5px rgba(106, 78, 35, 0.2);
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #6a4e23;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a3e1f;
+}
+
+/* Error or Success Alerts */
+.alert {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+
+.alert-error {
+  background-color: #f44336;
+}
+
+.alert-success {
+  background-color: #4CAF50;
+}
+/* Global Body Styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the form on the page */
+.login-container {
+  height: 100vh;
+}
+
+/* Card Style */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Header Style */
+.card-header h2 {
+  color: #6a4e23;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #6a4e23;
+  box-shadow: 0 0 5px rgba(106, 78, 35, 0.2);
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #6a4e23;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a3e1f;
+}
+
+/* Error or Success Alerts */
+.alert {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  background-color: #f44336;
+}
+.hearderset{
+  top: 0;
 }
